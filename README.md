@@ -7,7 +7,8 @@
  ```localhost:5000/post ```
 
 ##### To use put request:
- ``` - localhost:5000/put```\
+ ``` - localhost:5000/put``` 
+ 
  ```Send the data in body as JSON. You shoud send "id" key and an intager value in header to specifiy the user.```\
  ``` Sample data stored in data folder.```
   

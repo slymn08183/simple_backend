@@ -1,10 +1,11 @@
-const express = require("express");
 const {accessControl} = require("./middleware")
-
+const express = require("express");
 const app = express();
-
 const PORT = 5000;
+let {users} = require("./data/users");
+
 app.use(express.json());
+
 
 // noinspection JSCheckFunctionSignatures
 app.get("/get", accessControl, (req,res,next) =>
@@ -17,8 +18,6 @@ app.post("/post", accessControl,(req,res,next) =>
 {
     res.json({"this": "is a post request"})
 })
-
-let {users} = require("./data/users");
 
 let i = 0 ;
 // noinspection JSCheckFunctionSignatures
@@ -33,9 +32,7 @@ app.put("/put", accessControl, (req, res, next) =>{
             break;
         }
     }
-let tmp = {};
-    console.log(i)
-    tmp = users[i];
+
     res.json({
         success: true,
         data: users[i],

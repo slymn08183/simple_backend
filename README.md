@@ -20,3 +20,5 @@
     
     Second methot header:
     Add "admin" key and "admin" value in headers.
+
+  ###### Environment variables are in ```config/env/config.env```

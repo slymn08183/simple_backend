@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+
 const accessControl = (req,res,next) => {
-    console.log("Middeleware access control")
+    console.log("Middleware access control")
     const access = false;
     app.use(express.json());
 
@@ -15,7 +16,6 @@ const accessControl = (req,res,next) => {
     else{
         next();
     }
-
 };
 
 

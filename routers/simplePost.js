@@ -1,4 +1,4 @@
-const {accessControl} = require("../middleware")
+const {accessControl} = require("../middlewares/middleware")
 const express = require("express");
 const router = express.Router();
 

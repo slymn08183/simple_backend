@@ -1,4 +1,4 @@
-const {accessControl} = require("../middleware")
+const {accessControl} = require("../middlewares/middleware")
 let {users} = require("../data/users");
 const express = require("express");
 const router = express.Router();

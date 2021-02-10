@@ -1,5 +1,14 @@
 # simple_backend
 
+Set MongoDB connection string in config file and run project:
+
+     $ npm install
+     $ npm run start
+
+     # To start with nodemon
+     # $ npm run dev
+
+
 ##### To use get request: 
 ```localhost:5000/get```
 

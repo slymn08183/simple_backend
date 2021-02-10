@@ -19,7 +19,6 @@ const accessControl = (req,res,next) => {
 };
 
 
-
 module.exports = {
     accessControl
 };

@@ -15,7 +15,7 @@ const customErrorHandler = (err,req,res,next) => {
             customErr = new CustomError("Unknown Database Error!", 500)
         }
     }
-    // console.log(err)
+    console.log(err)
     res
         .status(customErr.status || 500)
         .json({

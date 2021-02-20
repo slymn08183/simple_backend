@@ -15,6 +15,9 @@ const customErrorHandler = (err,req,res,next) => {
             customErr = new CustomError("Unknown Database Error!", 500)
         }
     }
+    else if(err.status === 401){
+        customErr = new CustomError("UNAUTHORIZED", 401)
+    }
     console.log(err)
     res
         .status(customErr.status || 500)

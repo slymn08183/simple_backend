@@ -8,9 +8,9 @@ const postR = require("./routers/simplePost");
 const authR = require("./routers/simpleAuth");
 const customErrorHandler = require("./middlewares/errors/customErrorHandler");
 const connectToDatabase = require("./helpers/database/connectToDatabase");
-
 const express = require("express");
 const app = express();
+connectToDatabase();
 //express body middleware
 app.use(express.json());
 app.use("/get", getR);
